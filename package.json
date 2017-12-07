@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Michael Moore <miketmoore@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start:dev": "webpack-dev-server"
+  },
   "devDependencies": {
     "@types/react": "^16.0.27",
     "@types/react-dom": "^16.0.3",
