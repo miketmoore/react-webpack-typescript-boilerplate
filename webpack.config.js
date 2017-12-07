@@ -1,8 +1,18 @@
+const path = require('path')
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: ["./src/index.tsx"],
   output: {
       filename: "bundle.js",
-      path: __dirname + "/dist"
+      path: path.join(__dirname, 'dist'),
+      /**
+       * publicPath is required so that devServer's in-memory bundle will be used
+       * https://stackoverflow.com/a/42475466/300575
+       */
+      publicPath: '/dist/'
+  },
+
+  devServer: {
+    port: 3000
   },
 
   // Enable sourcemaps for debugging webpack's output.
