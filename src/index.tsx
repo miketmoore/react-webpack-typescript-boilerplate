@@ -3,9 +3,16 @@ import * as ReactDOM from "react-dom"
 
 import { Hello, HelloStyled, HelloProps } from "./components/Hello"
 
-const config: HelloProps = {
+interface ConfigProps extends HelloProps {
+    color?: string,
+    bg?: string
+}
+
+const config: ConfigProps = {
   compiler: "TypeScript",
-  framework: "React"
+  framework: "React",
+  color: 'yellow',
+  bg: 'red'
 }
 ReactDOM.render(
   <div>
