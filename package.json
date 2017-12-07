@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "webpack-dev-server",
-    "format": "prettier ./src/**.tsx"
+    "format": "prettier --write ./src/**/*.{js,json,ts,tsx}"
   },
   "devDependencies": {
     "@types/react": "^16.0.27",
