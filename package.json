@@ -12,6 +12,7 @@
     "react-dom": "^16.2.0",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.6.2",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   }
 }
