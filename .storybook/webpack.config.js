@@ -10,9 +10,16 @@ module.exports = {
   plugins: [
     // your custom plugins
   ],
+  resolve: {
+    extensions: [".ts",".tsx",".js"]
+  },
   module: {
     rules: [
-      // add your custom rules.
+      {
+        test: /\.tsx$/,
+        exclude: /node_modules/,
+        loader: 'ts-loader'
+      }
     ],
-  },
+  }
 };
