@@ -6,13 +6,18 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "webpack-dev-server",
-    "format": "prettier --write 'src/**/*.{js,json,ts,tsx}'"
+    "format": "prettier --write 'src/**/*.{js,json,ts,tsx}'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3",
     "@storybook/react": "^3.3.3",
     "@types/react": "^16.0.27",
     "@types/react-dom": "^16.0.3",
     "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "^6.26.0",
     "babel-plugin-emotion": "^8.0.12",
     "emotion": "^8.0.12",
     "polished": "^1.9.0",
