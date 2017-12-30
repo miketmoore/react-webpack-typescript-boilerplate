@@ -10,9 +10,18 @@ declare module "styled-system" {
 
   const space: any
 
+  type numberOrString = number | string
   interface SpaceProps {
-    m: number | string
-    p: number | string
+    m: numberOrString 
+    mt: numberOrString
+    mr: numberOrString
+    mb: numberOrString
+    ml: numberOrString
+    p: numberOrString
+    pt: numberOrString
+    pr: numberOrString
+    pb: numberOrString
+    pl: numberOrString
   }
 
   export {color, ColorProps, space, SpaceProps}
