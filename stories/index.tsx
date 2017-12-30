@@ -4,10 +4,5 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-type Foo = (props:FooProps) => JSX.Element
-interface FooProps {
-  children?: any
-}
-const Foo:Foo = ({children}) => <div>{children}</div>
-
-storiesOf('Welcome', module).add('to Storybook', () => <Foo children="Hello, World!" />)
+import Hello from '../src/components/Hello'
+storiesOf('Welcome', module).add('to Storybook', () => <Hello m="20px" bg="blue" color="white" p="25px">Hello, world!</Hello>)

@@ -1,26 +1,28 @@
 import * as React from "react"
 import styled, { css } from "react-emotion"
-import { color } from "styled-system"
-import { triangle } from "polished"
-export interface HelloProps { compiler: string; framework: string }
-export const Hello = (props: any) => (
-  <h1 className={props.className}>
-    Hello from {props.compiler} and {props.framework}!
-  </h1>
-)
+import { color, space } from "styled-system"
 
-export const HelloStyled = styled(Hello)`
-  ${color};
-  outline: 1px solid #000;
-`
-
-const triangleConfig: any = {
-  backgroundColor: "red",
-  foregroundColor: "yellow",
-  height: 25,
-  width: 25,
-  pointingDirection: "right"
+interface SpaceProps {
+  m: number | string
+  p: number | string
 }
-export const HelloTriangle = styled(HelloStyled)`
-  ${triangle(triangleConfig)};
+
+interface ColorProps {
+  bg: string
+  color: string
+}
+
+interface SectionProps extends SpaceProps, ColorProps {}
+
+const Section  = styled<SectionProps,{}>(props => <div {...props} />)`
+  ${space};
+  ${color};
 `
+
+interface HelloProps extends SectionProps {
+  children?: any
+}
+const Hello = ({children,m,bg,color,p}:HelloProps) => 
+  <Section m={m} bg={bg} color={color} p={p} children={children} />
+
+export default Hello
