@@ -1,28 +1,38 @@
+// Type definitions for styled-system
+// Project: styled-system
+// Definitions by: Michael T. Moore http://miketmoore.com
+
 declare module "styled-system" {
 
-  type Color = (obj: {[key:string]:any}, key: string | number, value: any) => any
-  const color: Color
+  /**
+   * color
+   */
+  export function color(obj: {[key:string]:any}, key: string | number, value: any): any
 
-  interface ColorProps {
+  export interface ColorProps {
     bg?: string
     color?: string
   }
 
-  const space: any
+  /**
+   * space
+   */
+  export function space (props:{[key:string]:any}): Array<number | string>
 
-  type numberOrString = number | string
-  interface SpaceProps {
-    m?: numberOrString 
-    mt?: numberOrString
-    mr?: numberOrString
-    mb?: numberOrString
-    ml?: numberOrString
-    p?: numberOrString
-    pt?: numberOrString
-    pr?: numberOrString
-    pb?: numberOrString
-    pl?: numberOrString
+  export interface SpaceProps {
+    m?: number | string 
+    mt?: number | string
+    mr?: number | string
+    mb?: number | string
+    ml?: number | string
+    mx?: number | string
+    my?: number | string
+    p?: number | string
+    pt?: number | string
+    pr?: number | string
+    pb?: number | string
+    pl?: number | string
+    px?: number | string
+    py?: number | string
   }
-
-  export {color, ColorProps, space, SpaceProps}
 }
