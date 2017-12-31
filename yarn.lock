@@ -6249,9 +6249,15 @@ style-loader@^0.19.1:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styled-system@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.0.8.tgz#a5a08ab26a8cc27e7a22e743d623211b82482b5e"
+"styled-system@https://github.com/miketmoore/styled-system.git":
+  version "1.1.1"
+  resolved "https://github.com/miketmoore/styled-system.git#203b058094f1c77d20203dd689ef5df938137f6c"
+  dependencies:
+    prop-types "^15.6.0"
+
+"styled-system@https://github.com/miketmoore/styled-system.git#typescript-declaration-file":
+  version "1.1.1"
+  resolved "https://github.com/miketmoore/styled-system.git#37b4a2dfb59b14d7113d4b678a418888bbd02b9b"
   dependencies:
     prop-types "^15.6.0"
 

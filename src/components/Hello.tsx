@@ -1,7 +1,6 @@
-/// <reference path="../styled-system/index.d.ts" />
 import * as React from "react"
 import styled, { css } from "react-emotion"
-import { color, ColorProps, space, SpaceProps } from "styled-system"
+import { color, ColorProps, space, SpaceProps } from "styled-system" 
 
 interface SectionProps extends ColorProps, SpaceProps {}
 
