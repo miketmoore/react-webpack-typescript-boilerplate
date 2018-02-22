@@ -31,3 +31,13 @@ yarn start:dev
 ```
 
 This will make http://localhost:3000 available. There isn't anything to see there, but it is a blank canvas for your awesome project. Note: the port is configurable via [webpack.config.js](webpack.config.js).
+
+## Build && Start Storybook
+
+[Storybook](https://storybook.js.org/) is an amazing tool for rapidly prototyping UI components. I have setup a starter version of it that works with TypeScript. 
+
+```
+yarn build-storybook && yarn storybook
+```
+
+This will make http://localhost:6006 available. There should be a simple "hello, world" story.
