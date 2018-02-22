@@ -30,4 +30,4 @@ yarn install
 yarn start:dev
 ```
 
-This will make http://localhost:3000 available. There isn't anything to see there, but it is a blank canvas for your awesome project. Note: the port is configurable via [webpack.config.js].
+This will make http://localhost:3000 available. There isn't anything to see there, but it is a blank canvas for your awesome project. Note: the port is configurable via [webpack.config.js](webpack.config.js).
